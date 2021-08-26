@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<Platforms>AnyCPU;x64</Platforms>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Stride.Engine" Version="4.0.1.1405" />
+
+		<PackageReference Include="Stride.Core.Assets.CompilerApp" Version="4.0.1.1405" IncludeAssets="build;buildTransitive" />
+
+		<PackageReference Include="Stride.Graphics" Version="4.0.1.1405" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="small_uv.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Assets\" />
+	</ItemGroup>
+
+</Project>
